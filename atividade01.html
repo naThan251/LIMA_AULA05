@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matérias Favoritas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        tr th:nth-child(2) {
+            text-align: center;
+            width: 70px;
+        }
+
+        th {
+            border: 1px solid grey;
+            padding: 12px;
+            text-align: left;
+        }        
+
+        tbody th { 
+            background-color: rgb(224, 225, 227); 
+
+        }
+        
+        .idade{text-align: center;}
+
+        thead th {
+            background-color: darkslateblue;
+            color: white;
+            text-align: center;
+        }
+
+        tfoot {
+            background-color: darkslateblue;
+            font-weight: bold;
+            color: white;
+            th { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <table border="2">
+        <caption>Matérias Favoritas</caption>
+
+        <tbody>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Matéria Favorita</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Mia Lima</th>
+                <th>14</th>
+                <th>Inglês</th>
+            </tr>
+            <tr>
+                <th>Luara Luz</th>
+                <th>14</th>
+                <th>História</th>                
+            </tr>
+            <tr>
+                <th>Eduardo Americo</th>
+                <th>15</th> 
+                <th>Português</th>
+            </tr>
+            <tr>
+                <th>Gabriel Alvaz</th>
+                <th>13</th>
+                <th>Ciências da Nat.</th>
+            </tr>
+            <tr>
+                <th>Oliva Aparecida</th>
+                <th>15</th>
+                <th>Português</th>
+            </tr>
+            <tr>
+                <th>Ariel Alga</th>
+                <th>14</th>
+                <th>Ciências da Nat.</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="3">Escola</th>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
