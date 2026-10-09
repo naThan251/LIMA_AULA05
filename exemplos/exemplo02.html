@@ -4,11 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TABELAS - Exemplo 2</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        th, td {
+            border: 1px solid #bbb;
+            padding: 12px;
+            text-align: left;
+        }
+
+        /* Células da primeira linha do cabeçalho */
+        thead tr:first-child th {
+            background-color: #9e1820;
+            color: white;
+            text-align: center;
+        }
+
+        /* Segunda linha do cabeçalho: nomes das colunas. */
+        thead tr:nth-child(2) {
+            background-color: #c92127;
+            color: white;
+        }
+
+        /* Células das categorias que ocupam duas linhas. */
+        tbody th {
+            background-color: #e8e8e8;
+            vertical-align: middle;
+        }
+
+        /* Centraliza a quantidade de cada produto. */
+        tbody td:last-child {
+            text-align: center;
+        }
+
+        /* Destaca produtos com estoque baixo. */
+        .estoque-baixo {
+            background-color: #fff0cc;
+            color: #754500;
+            font-weight: bold;
+        }
+
+        tfoot {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+
+        tfoot td {
+            text-align: center;
+        }
+
+        .legenda {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+    </style>
 </head>
 <body>
     
     <table border="2">
-        <capition>Cadastro de produtos</capition>
+        <caption>Cadastro de produtos</caption>
 
         <tbody>
             <tr>
